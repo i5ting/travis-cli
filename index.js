@@ -1,10 +1,4 @@
 #!/usr/bin/env node
-var fs = require('fs')
-var argv = process.argv;
-argv.shift();
-
-var file_path = __dirname;
-var current_path = process.cwd();
 
 
 /**
@@ -23,6 +17,15 @@ program
  
 
 if (program.init) {
+  var fs = require('fs')
+  var argv = process.argv;
+  argv.shift();
+
+  var file_path = __dirname;
+  var current_path = process.cwd();
+
+  
+  
   fs.createReadStream(file_path + '/travis.yml').pipe(fs.createWriteStream(current_path + '/.travis.yml'))
   return console.log('init complete!')
 }
