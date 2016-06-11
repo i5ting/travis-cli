@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "preferGlobal": "true",
+  "bin": {
+    "travis": "index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/i5ting/travis-cli.git"
@@ -15,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/i5ting/travis-cli/issues"
   },
-  "homepage": "https://github.com/i5ting/travis-cli#readme"
+  "homepage": "https://github.com/i5ting/travis-cli#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
 }
