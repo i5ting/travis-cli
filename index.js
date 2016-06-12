@@ -28,4 +28,4 @@ if (program.badge) {
   return console.log('[![Build](https://travis-ci.org/' + cfg.user + '/' + cfg.project + '.svg?branch=master)](https://travis-ci.org/' + cfg.user + '/' + cfg.project + ')')
 }
 
-
+console.log('Usages: travis -i or travis -b')
