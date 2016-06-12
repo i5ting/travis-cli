@@ -10,10 +10,9 @@ var current_path = process.cwd();
 var program = require('commander');
 
 program
-  .version('0.0.1')
+  .version(require('./package.json').version)
   .option('-i, --init', 'init default .travis.yml')
   .option('-b, --badge', 'get badge for README.md')
-  .option('-c, --cheese [type]', 'Add the specified type of cheese [marble]', 'marble')
   .parse(process.argv);
  
 
