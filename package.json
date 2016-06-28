@@ -29,5 +29,10 @@
     "ava": "^0.15.2",
     "co-exec": "^1.1.0",
     "codecov": "^1.0.1"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "standard"
+    }
   }
 }
