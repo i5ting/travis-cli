@@ -33,7 +33,7 @@ if (program.codecov) {
   var cfg = require('get-git-info')(current_path);
   // console.log(cfg)
   //{ user: 'i5ting', project: 'get-git-info' }
-   return console.log('[codecov.io](https://codecov.io/github/' + cfg.user + '/' + cfg.project + '/coverage.svg?branch=master)](https://codecov.io/github/' + cfg.user + '/' + cfg.project + '?branch=master)')
+   return console.log('[![codecov.io](https://codecov.io/github/' + cfg.user + '/' + cfg.project + '/coverage.svg?branch=master)](https://codecov.io/github/' + cfg.user + '/' + cfg.project + '?branch=master)')
 }
 
 
