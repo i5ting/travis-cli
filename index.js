@@ -49,7 +49,7 @@ if (program.gitter) {
   var cfg = require('get-git-info')(current_path);
   // console.log(cfg)
   //{ user: 'i5ting', project: 'get-git-info' }
-   return console.log('[![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/' + cfg.user + '/' + cfg.project + '?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)')
+   return console.log('[![gitter](https://gitter.im/' + cfg.user + '/' + cfg.project + '?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)')
 }
 
 
