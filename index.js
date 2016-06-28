@@ -13,6 +13,7 @@ program
   .version(require('./package.json').version)
   .option('-i, --init', 'init default .travis.yml')
   .option('-b, --badge', 'get badge for README.md')
+  .option('-c, --codecov', 'get codecov badge for README.md')
   .parse(process.argv);
  
 
@@ -25,7 +26,15 @@ if (program.badge) {
   var cfg = require('get-git-info')(current_path);
   // console.log(cfg)
   //{ user: 'i5ting', project: 'get-git-info' }
-  return console.log('[![Build](https://travis-ci.org/' + cfg.user + '/' + cfg.project + '.svg?branch=master)](https://travis-ci.org/' + cfg.user + '/' + cfg.project + ')')
+   return console.log('[![Build](https://travis-ci.org/' + cfg.user + '/' + cfg.project + '.svg?branch=master)](https://travis-ci.org/' + cfg.user + '/' + cfg.project + ')')
 }
+
+if (program.codecov) {
+  var cfg = require('get-git-info')(current_path);
+  // console.log(cfg)
+  //{ user: 'i5ting', project: 'get-git-info' }
+   return console.log('[codecov.io](https://codecov.io/github/' + cfg.user + '/' + cfg.project + '/coverage.svg?branch=master)](https://codecov.io/github/' + cfg.user + '/' + cfg.project + '?branch=master)')
+}
+
 
 console.log('Usages: travis -i or travis -b')
