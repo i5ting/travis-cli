@@ -3,7 +3,7 @@
 a cli tool for travis-cli 
 
 [![NPM version](https://img.shields.io/npm/v/travis-cli.svg?style=flat-square)](https://www.npmjs.com/package/travis-cli)
-[![gitter](https://gitter.im/i5ting/travis-cli?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/i5ting/travis-cli?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build](https://travis-ci.org/i5ting/travis-cli.svg?branch=master)](https://travis-ci.org/i5ting/travis-cli)
 [![codecov.io](https://codecov.io/github/i5ting/travis-cli/coverage.svg?branch=master)](https://codecov.io/github/i5ting/travis-cli?branch=master)
 
