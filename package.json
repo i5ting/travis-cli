@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/ava -v"
+    "test": "./node_modules/.bin/ava -v",
+    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov"
   },
   "preferGlobal": "true",
   "bin": {
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "ava": "^0.15.2",
-    "co-exec": "^1.1.0"
+    "co-exec": "^1.1.0",
+    "codecov": "^1.0.1"
   }
 }
