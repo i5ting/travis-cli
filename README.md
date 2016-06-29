@@ -7,6 +7,7 @@ a cli tool for travis-cli
 [![Build](https://travis-ci.org/i5ting/travis-cli.svg?branch=master)](https://travis-ci.org/i5ting/travis-cli)
 [![codecov.io](https://codecov.io/github/i5ting/travis-cli/coverage.svg?branch=master)](https://codecov.io/github/i5ting/travis-cli?branch=master)
 
+
 ## Install
 
 ```
