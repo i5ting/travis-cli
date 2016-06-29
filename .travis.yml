@@ -4,4 +4,4 @@ node_js:
   - stable
 script: 
   - npm test
-  - npm report-coverage
+  - npm run report-coverage
