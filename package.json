@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/i5ting/travis-cli#readme",
   "dependencies": {
-    "commander": "^2.1.0",
+    "commander": "^1.1.0",
     "get-git-info": "^1.0.0"
   },
   "devDependencies": {
