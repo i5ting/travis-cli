@@ -31,6 +31,7 @@ if (program.badge) {
   console.log('[![NPM version](https://img.shields.io/npm/v/' + cfg.project + '.svg?style=flat-square)](https://www.npmjs.com/package/' + cfg.project + ')')
   console.log('[![Build](https://travis-ci.org/' + cfg.user + '/' + cfg.project + '.svg?branch=master)](https://travis-ci.org/' + cfg.user + '/' + cfg.project + ')')
   console.log('[![codecov.io](https://codecov.io/github/' + cfg.user + '/' + cfg.project + '/coverage.svg?branch=master)](https://codecov.io/github/' + cfg.user + '/' + cfg.project + '?branch=master)')
+  console.log('[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)')
 }
 
 if (program.codecov) {
