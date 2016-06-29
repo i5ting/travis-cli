@@ -23,10 +23,15 @@ $ travis -h
 
   Options:
 
-    -h, --help     output usage information
-    -V, --version  output the version number
-    -i, --init     init default .travis.yml
-    -b, --badge    get badge for README.md
+    -h, --help      output usage information
+    -V, --version   output the version number
+    -i, --init      init default .travis.yml
+    -b, --badge     get all badges for README.md
+    -n, --npm       get npm badge .travis.yml
+    -g, --gitter    get gitter badge for README.md
+    -t, --travis    get travis badge for README.md
+    -s, --standard  get standard badge for README.md
+    -c, --codecov   get codecov badge for README.md
 ```
 
 create .travis.yml
@@ -35,12 +40,18 @@ create .travis.yml
 travis -i
 ```
 
-get badge for README.md
+get all badges for README.md
 
 
 ```
 travis -b
 ```
+
+- npm
+- gitter
+- travis
+- standard
+- codecov
 
 ## Contributing
 

@@ -13,7 +13,7 @@ var program = require('commander')
 program
   .version(require('./package.json').version)
   .option('-i, --init', 'init default .travis.yml')
-  .option('-b, --badge', 'get badge for README.md')
+  .option('-b, --badge', 'get all badges for README.md')
   .option('-n, --npm', 'get npm badge .travis.yml')
   .option('-g, --gitter', 'get gitter badge for README.md')
   .option('-t, --travis', 'get travis badge for README.md')
