@@ -17,6 +17,7 @@ program
   .option('-n, --npm', 'get npm badge .travis.yml')
   .option('-g, --gitter', 'get gitter badge for README.md')
   .option('-t, --travis', 'get travis badge for README.md')
+  .option('-s, --standard', 'get standard badge for README.md')
   .option('-c, --codecov', 'get codecov badge for README.md')
   .parse(process.argv)
 
@@ -46,6 +47,10 @@ if (program.gitter) {
 
 if (program.travis) {
   console.log('[![Build](https://travis-ci.org/' + cfg.user + '/' + cfg.project + '.svg?branch=master)](https://travis-ci.org/' + cfg.user + '/' + cfg.project + ')')
+}
+
+if (program.standard) {
+  console.log('[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)')
 }
 
 // console.log('Usages: travis -i or travis -b')
