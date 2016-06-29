@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/ava -v",
-    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov"
+    "test": "./node_modules/.bin/nyc ./node_modules/.bin/ava -v",
+    "report-coverage": "./node_modules/.bin/nyc report --reporter=lcov > coverage.lcov && codecov"
   },
   "preferGlobal": true,
   "bin": {
@@ -30,6 +30,7 @@
     "co-exec": "^1.0",
     "codecov": "^1.0.1",
     "ghooks": "^1.2.4",
+    "nyc": "^6.6.1",
     "standard": "^7.1.2"
   },
   "config": {

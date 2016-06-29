@@ -2,10 +2,6 @@ sudo: true
 language: node_js
 node_js:
   - stable
-install:
-  - npm install -g codecov
-  - npm install -g nyc
-  - npm install -g ava
 script: 
   - npm test
   - npm report-coverage
