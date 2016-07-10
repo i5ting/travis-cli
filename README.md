@@ -11,7 +11,7 @@ a cli tool for travis-cli
 ## Install
 
 ```
-$ [sudo]npm i -g 
+$ [sudo] npm i -g travis-cli 
 ```
 
 ## Usages
