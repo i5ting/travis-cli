@@ -4,6 +4,7 @@ var fs = require('fs')
 var filePath = __dirname
 var currentPath = process.cwd()
 var cfg = require('get-git-info')(currentPath)
+
 /**
  * Module dependencies.
  */
