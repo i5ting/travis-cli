@@ -34,7 +34,7 @@ $ travis -h
     -c, --codecov   get codecov badge for README.md
 ```
 
-create .travis.yml
+create .travis.yml and codecov.yml
 
 ```
 travis -i
