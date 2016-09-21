@@ -24,6 +24,7 @@ program
 
 if (program.init) {
   fs.createReadStream(filePath + '/travis.yml').pipe(fs.createWriteStream(currentPath + '/.travis.yml'))
+  fs.createReadStream(filePath + '/codecov.yml').pipe(fs.createWriteStream(currentPath + '/codecov.yml'))
   console.log('init complete!')
 }
 
