@@ -53,6 +53,16 @@ travis -b
 - standard [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 - codecov [![codecov.io](https://codecov.io/github/i5ting/travis-cli/coverage.svg?branch=master)](https://codecov.io/github/i5ting/travis-cli?branch=master)
 
+
+in package.json you neet scripts with `report-coverage`
+
+```
+"scripts": {
+    "test": "./node_modules/.bin/nyc ./node_modules/.bin/ava -v",
+    "report-coverage": "./node_modules/.bin/nyc report --reporter=lcov > coverage.lcov && codecov"
+  },
+```
+
 ## Contributing
 
 1. Fork it
