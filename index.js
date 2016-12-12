@@ -25,6 +25,56 @@ program
 if (program.init) {
   fs.createReadStream(filePath + '/travis.yml').pipe(fs.createWriteStream(currentPath + '/.travis.yml'))
   fs.createReadStream(filePath + '/codecov.yml').pipe(fs.createWriteStream(currentPath + '/codecov.yml'))
+
+  if (fs.existsSync(process.cwd() + '/package.json')) {
+    var source = require(filePath + '/package.json')
+    var dest = require(process.cwd() + '/package.json')
+
+    if (dest.scripts) {
+      for (var i in source.scripts) {
+        // console.log(source.scripts.test)
+        dest.scripts[i] = source.scripts[i]
+      }
+    } else {
+      dest.scripts = {
+        'test': './node_modules/.bin/nyc ./node_modules/.bin/ava -v',
+        'report-coverage': './node_modules/.bin/nyc report --reporter=lcov > coverage.lcov && codecov',
+        'standard': './node_modules/.bin/standard index.js'
+      }
+    }
+
+    if (dest.devDependencies) {
+      for (var j in source.devDependencies) {
+        // console.log(i)
+        dest.devDependencies[j] = source.devDependencies[j]
+      }
+    } else {
+      dest.devDependencies = {
+        'ava': '^0.15.2',
+        'co-exec': '^1.0',
+        'codecov': '^1.0.1',
+        'ghooks': '^1.2.4',
+        'nyc': '^7.0.0',
+        'standard': '^7.1.2'
+      }
+    }
+
+    if (dest.config) {
+      for (var k in source.config) {
+        // console.log(i)
+        dest.config[k] = source.config[k]
+      }
+    } else {
+      dest.config = {
+        'ghooks': {
+          'pre-commit': 'npm run standard'
+        }
+      }
+    }
+
+    fs.writeFileSync(process.cwd() + '/package.json', JSON.stringify(dest, null, 2))
+  }
+
   console.log('init complete!')
 }
 
