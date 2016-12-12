@@ -27,12 +27,12 @@
     "get-git-info": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.16.0",
     "co-exec": "^1.0",
     "codecov": "^1.0.1",
     "ghooks": "^1.2.4",
-    "nyc": "^7.0.0",
-    "standard": "^7.1.2"
+    "nyc": "^10.0.0",
+    "standard": "^8.4.0"
   },
   "config": {
     "ghooks": {
