@@ -27,7 +27,7 @@
     "get-git-info": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
+    "ava": "^0.18.1",
     "co-exec": "^1.0",
     "codecov": "^1.0.1",
     "ghooks": "^1.2.4",
