@@ -29,7 +29,7 @@
   "devDependencies": {
     "ava": "^0.16.0",
     "co-exec": "^1.0",
-    "codecov": "^1.0.1",
+    "codecov": "^2.0.2",
     "ghooks": "^1.2.4",
     "nyc": "^10.0.0",
     "standard": "^8.4.0"
